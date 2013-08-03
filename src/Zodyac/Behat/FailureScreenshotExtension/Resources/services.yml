@@ -1,0 +1,12 @@
+services:
+    behat.failure_screenshot_extension.listener.failure_screenshot:
+        class: Zodyac\Behat\FailureScreenshotExtension\Listener\FailureScreenshotListener
+        arguments: [%behat.failure_screenshot_extension.path%]
+        tags:
+            - { name: behat.event_subscriber }
+
+    behat.failure_screenshot_extension.formatter.listener.html:
+        class: Zodyac\Behat\FailureScreenshotExtension\Formatter\HtmlFormatterListener
+        arguments: [@behat.failure_screenshot_extension.listener.failure_screenshot]
+        tags:
+            - { name: behat.event_subscriber }

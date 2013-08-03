@@ -16,7 +16,7 @@
         "behat/behat": "~2.4.6",
         "behat/mink": "~1.5.0",
         "behat/mink-extension": "~1.1.4",
-        "behat/mink-selenium2-driver": "~1.1.1",
+        "behat/mink-selenium2-driver": "~1.1.1"
     },
     "suggest": {
         "zodyac/behat-extensible-html-formatter": "Allows the failure screenshots to be displayed in the HTML formatter output."
